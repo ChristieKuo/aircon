@@ -1,0 +1,308 @@
+@charset "UTF-8";
+/* CSS Document */
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family:Helvetica, Arial," sans-serif", Microsoft JhengHei;
+}
+
+section{
+	margin-top:0px;
+	margin-bottom: 0px;
+}
+
+.banner{
+
+	position:relative;
+	overflow:hidden;
+	background:url(image/aircon.jpg)no-repeat;
+	background-size:100%;
+	margin: auto;
+	min-height: 800px;
+	max-height: 850px;
+}
+
+/*------------------------------------標題簡介------------------------------------*/
+
+.anitext2{
+	position:absolute;
+	padding:10px;
+	left:4%;
+	bottom:48%;
+	background:rgba(0,0,0,0);
+	opacity:1;
+	
+	-webkit-animation-name: ant2; /* Safari 4.0 - 8.0 */
+	animation-name: ant2;
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+	animation-duration: 3s;
+	-webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+	animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease; /* Safari 4.0 - 8.0 */
+	animation-timing-function: ease;
+}
+
+.anitext2 img{
+	width: 80%;
+}
+
+@keyframes ant2 {
+    from   {opacity:0;}
+    to  {opacity:1;}
+}
+
+.anitext3{
+	position:absolute;
+	padding:20px 40px 20px 30px;
+	text-align: left;
+	right: 0px;
+	bottom:25%;
+	color:#000;
+	background:rgba(255,255,255,1);
+	border-radius: 10px;
+	font-size:0.8em;
+	opacity:1;
+	
+	-webkit-animation-name: ant3; /* Safari 4.0 - 8.0 */
+	animation-name: ant3;
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+	animation-duration: 3s;
+	-webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+	animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease; /* Safari 4.0 - 8.0 */
+	animation-timing-function: ease;
+	
+}
+@keyframes ant3 {
+    from   {bottom:100%; opacity:0; rgba(255,255,255,1)}
+    to  {bottom:25%; opacity:1; rgba(255,255,255,1)}
+}
+
+
+/*------------------------------------跳動------------------------------------*/
+
+.ar{
+	margin:42%  5px 0px;
+	text-align: center;
+	padding: 10px;
+    -webkit-animation: baloon_1 1s infinite;
+    -moz-animation: baloon_1 1s infinite;
+    -ms-animation: baloon_1 1s infinite;
+    -o-animation: baloon_1 1s infinite;
+    animation: baloon_1 1s infinite;
+}
+
+@-webkit-keyframes baloon_1{
+0% { transform:translateY(0px);}
+50% {transform:translateY(30px);}
+100% {transform:translateY(0px);}
+}
+
+@-moz-keyframes baloon_1{
+0% { transform:translateY(0px);}
+50% {transform:translateY(30px);}
+100% {transform:translateY(0px);}
+}
+
+@-ms-keyframes baloon_1{
+0% { transform:translateY(0px);}
+50% {transform:translateY(30px);}
+100% {transform:translateY(0px);}
+}
+
+@-o-keyframes baloon_1{
+0% { transform:translateY(0px);}
+50% {transform:translateY(30px);}
+100% {transform:translateY(0px);}
+}
+
+@keyframes baloon_1{
+0% { transform:translateY(0px);}
+50% {transform:translateY(30px);}
+100% {transform:translateY(0px);}
+}
+
+.ar:hover{
+	cursor:pointer;
+	opacity:0.7;
+}
+
+/*------------------------------------內容------------------------------------*/
+
+article{
+	display: block;
+	position:static;
+	overflow: hidden;
+	width: 100%;
+	margin: auto;
+	padding-bottom:2%;
+	background-color: #e8f7fe;
+
+}
+
+article  h1{
+	margin-top:5%;
+	text-align: center;
+	color:#000;
+	padding: 10px;
+	border-bottom: solid 2px rgba(71,138,255,1.00) ;
+	
+}
+
+article h3 , p{
+	color:rgba(71,138,255,1.00);
+}
+
+article p{
+	font-size: 0.8em;
+}
+
+article  img{
+	width: 40%;
+	margin: auto;
+}
+.big{
+	width: 70%;
+	margin: auto;
+}
+
+.line{
+	width: 60%;
+	margin: auto;
+	text-align: center;
+}
+
+/* ------------------Popup container - can be anything you want------------------ */
+.popup {
+    position: relative;
+    
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	margin:12%;
+	padding: 5%;
+	border: solid 2px rgba(71,138,255,1.00);
+	border-radius: 10px;
+	background:#fff;
+	text-align: center;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    background-color:rgba(212,244,252,1.00);
+    color:rgba(71,138,255,1.00);
+    text-align: left;
+	font-size: 0.7em;
+    border-radius: 8px;
+    padding:8%;
+    position: absolute;
+    z-index: 1;
+    bottom: 0%;
+    left: 0%;
+    
+}
+
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+
+
+/*～～～～～～～～～～～～～～～～～footer～～～～～～～～～～～～～～～*/
+
+footer{
+	width: 100%;
+	position: absolute;
+	z-index: 99999999;
+	background-image: url(image/footer.jpg);
+	padding: 25px;
+	display: inline;
+	border-top: solid 2px rgba(71,138,255,1.00) ;
+}
+
+
+.castnet{
+	margin-left: 30px; 
+	font-size: 10pt;
+	text-decoration: none;
+	color:rgba(71,138,255,1.00);
+	
+}
+
+.credit{
+	float: right; 
+	margin-right: 50px;
+	font-size: 10pt;
+	text-decoration: none;
+	color:rgba(71,138,255,1.00);
+	
+}
+
+
+
+
+
+
+/*===================rwd details===========================*/
+
+@media only screen and (max-width:1000px){
+	
+	.banner{
+		background-size:100%;
+		overflow: hidden;
+		min-height: 500px;
+		max-height: 600px;
+}
+	
+.ar{margin-top: 50%;}
+	
+	.anitext2{
+		bottom:58%;
+	}
+	
+	.anitext2 img{
+		width:50%;
+	}
+	
+/*===================rwd details===========================*/
+	
+@media only screen and (max-width:640px){
+	.banner{
+		background:url(image/4iphone.jpg)no-repeat;
+		background-size: 100%;
+
+		max-height: 600px;
+	}
+	
+	.ar{
+	display: none;}
+	
+	.anitext2{
+		bottom:75%;
+	}
+	
+	.anitext3{
+		bottom:0px;
+		border-radius: 0px;
+	}
+	
+	
+	}

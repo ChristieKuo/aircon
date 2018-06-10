@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>冷氣症候群</title>
+<link href="aircon.css" rel="stylesheet" type="text/css">
+<link href="rwd.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+	function myFunction2() {
+    var popup = document.getElementById("myPopup2");
+    popup.classList.toggle("show");
+}
+	function myFunction3() {
+    var popup = document.getElementById("myPopup3");
+    popup.classList.toggle("show");
+}
+	function myFunction4() {
+    var popup = document.getElementById("myPopup4");
+    popup.classList.toggle("show");
+}
+	
+$(document).ready(function(){
+	$('.ar').click(function(){
+
+		$('html, body').animate({scrollTop : $('#s').offset().top},800);
+
+		return false;
+
+	});
+});
+
+</script>
+
+<link rel="icon" type="image/png" href="image/favicon.png"/>
+</head>
+
+<body>
+
+<section>
+<div class="banner">
+	<div class="anitext2"><img src="image/title.png"></div>
+	<div class="anitext3">炎炎夏日，
+衝進冷氣房消暑應該是再爽快不過的事，<br>
+怎麼搞的全身不舒服？！快來一起一探究竟！
+</div>
+    
+	<div class="ar"><a href="#s"><img src="image/arrow.png"></a></div>
+</div>
+</section>
+
+<article id="s">
+	<div class="line"><h1>冷氣症候群是什麼，又該怎麼預防呢？</h1><p>如果出現以下不適症狀，那很有可能是冷氣症候群纏上你囉！點點滑鼠來看解決方法！
+<br>
+也別忘了維持攝氏25度以上、偶爾讓冷氣休息、並勤勞起身活動，才是保健康＋拯救北極熊的根本之道！</p></div>
+	
+	<div class="big">
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+	<div class="col-m-6 col-6">
+	
+	<div class="popup" onclick="myFunction()"><img src="image/sick.png"><h3>呼吸道過敏：</h3><p>鼻水噴嚏樣樣來，嚴重甚至出現氣喘或氣管發炎現象。</p>
+  	<span class="popuptext" id="myPopup">𝟏. 戴口罩，可以為口鼻加溫<br>
+𝟐. 避免食／飲用冰冷的食物<br>
+𝟑. 如果狀況持續過久，請務必就醫，以免持續惡化喔！
+</span>
+	</div>
+	
+	<div class="popup" onclick="myFunction2()"><img src="image/sick 3.png"><h3>手腳、身體發冷：</h3><p>小心別成為冷血動物！</p>
+  	<span class="popuptext" id="myPopup2">𝟏. 喝薑茶驅寒，幫助血液循環。但中醫師建議，適量即可，喝多反而會讓體溫散失過多！<br>
+𝟐. 沒事起來動一動，促進血液循環
+</span>
+	</div>
+	
+	</div>
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+	<div class="col-m-6 col-6">
+	<div class="popup" onclick="myFunction3()"><img src="image/sick 2.png"><h3>眼睛與皮膚乾癢：</h3><p>長時間盯電腦又吹冷氣，養出乾眼和乾燥肌！</p>
+  	<span class="popuptext" id="myPopup3">𝟏. 可以電扇搭配冷氣，不但省錢，而且電扇比較不會影響空氣濕度。<br>
+𝟐. 在桌上放一杯水<br>
+𝟑. 盯電腦一小時至少休息五分鐘，並且避免配戴隱形眼鏡！</span>
+	</div>
+	
+	<div class="popup" onclick="myFunction4()"><img src="image/sick 4.png"><h3>頭痛：</h3><p>才不是太用功讀書，是環境溫差大</p>
+  	<span class="popuptext" id="myPopup4">𝟏. 適當調整空調溫度，避免室內外溫差過大，會像突然大吃剉冰一樣痛苦。<br>
+𝟐. 洗頭務必盡快吹乾！<br>
+𝟑. 熱敷頭頸肩，通體舒暢</span>
+	</div>
+	</div>	
+	
+	</div>
+</article>
+
+
+<footer>
+<a href="http://www.commonhealth.com.tw/article/article.action?nid=62649" target="_blank" class="castnet">資料來源｜康健雜誌：輕鬆擊退「冷氣病」！</a>
+<a href="https://www.instagram.com/kuo_artstuff/" target="_blank" class="credit">&copy; Designed by Christie Kuo, 2018</a>
+</footer>
+
+</body>
+</html>
